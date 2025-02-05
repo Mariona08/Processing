@@ -5,6 +5,7 @@ int y = 100;
 void setup(){
   size(800, 800);
   background(255, 100, 20);
+  
 }
 
 void draw(){
@@ -18,6 +19,7 @@ void drawRobot(){
 
 void drawFace(){
   // cabells
+  strokeWeight(1);
   rectMode(CENTER);
   fill(255, 255, 0);
   square(x, y, 140);
@@ -134,6 +136,12 @@ void drawBody(){
   fill(0, 0, 100);
   rect(x, y+300, 150, 50);
   
+  //sabates
+  fill(255, 0, 0);
+  triangle(x+40, y+500, x+10, y+550, x+70, y+550);
+  triangle(x-40, y+500, x-10, y+550, x-70, y+550);
+  
+  
   //cames
   rectMode(CENTER);
   fill(0, 0, 100);
@@ -166,11 +174,39 @@ void drawBody(){
   vertex(x+79, y+150);
   endShape(CLOSE);
   
+  //centre de control
+  rectMode(CENTER);
+  fill(100, 100, 100);
+  rect(x+40, y+150, 50, 50);
+  fill(0, 0, 255);
+  rect(x+30, y+140, 10, 5);
+  fill(0, 0, 255);
+  rect(x+30, y+150, 10, 5);
+  fill(255, 0, 0);
+  rect(x+50, y+145, 15, 20);
+  fill(0, 255, 0);
+  rect(x+40, y+163, 30, 8);
+  
+  
+  //mans
+  rectMode(CENTER);
+  fill(0);
+  strokeWeight(7);
+  line(x-100, y+328, x-84, y+348);
+  line(x-84, y+348, x-95, y+368);
+  
+  line(x-100, y+328, x-116, y+348);
+  line(x-116, y+348, x-105, y+368);
+  
+  line(x+100, y+328, x+84, y+348);
+  line(x+84, y+348, x+95, y+368);
+  
+  line(x+100, y+328, x+116, y+348);
+  line(x+116, y+348, x+105, y+368);
   
   
   
-  //sabates
-  triangle
+  
   
   
 }
