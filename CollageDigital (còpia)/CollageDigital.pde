@@ -33,7 +33,8 @@ void keyPressed() {
   if (key == 'i') {
     
     PImage img = randomImage();
-    image(img, mouseX, mouseY, img.width / 4, img.height / 4);
+    float imgSize = random(10, 200); 
+    image(img, mouseX, mouseY, imgSize, imgSize);
   } 
   else if (key == 't') {
   
