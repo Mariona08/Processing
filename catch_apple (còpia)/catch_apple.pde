@@ -80,7 +80,7 @@ void draw(){
   fill(255);
   textSize(48);  // mida més gran
   textAlign(CENTER, CENTER);  // centrat al mig
-  text("GAME OVER", width / 2, height / 2);
+  text("LLÀSTIMA INTENTA DE NOU", width / 2, height / 2);
   noLoop();
   }
 
@@ -89,7 +89,7 @@ void draw(){
   fill(255);
   textSize(48);  // mida més gran
   textAlign(CENTER, CENTER);  // centrat al mig
-  text("CONGRATULATIONS", width / 2, height / 2);
+  text("ENHORABONA", width / 2, height / 2);
   noLoop();
   }
 
